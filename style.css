@@ -1,17 +1,17 @@
+/* Base Reset and Typography */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  background: #121212;
+  color: #E0E0E0;
 }
 
+/* Header & Navigation */
 header {
-
-  background: #724949;
-  color: white;
-  padding: 10px 0;
+  background: #1E1E1E;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -22,7 +22,7 @@ nav ul {
   display: flex;
   justify-content: left;
   margin: 0;
-  padding: 0;
+  padding: 15px;
 }
 
 nav ul li {
@@ -30,41 +30,166 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #E0E0E0;
   text-decoration: none;
+  padding: 8px 12px;
+  transition: 0.3s;
 }
 
+nav ul li:hover {
+  background-color: rgba(0, 184, 169, 0.2);
+  border-radius: 4px;
+  transform: scale(1.05);
+}
+
+/* Sections */
 section {
-  padding: 50px 175px;
+  padding: 50px 20px;
   max-width: 1000px;
   margin: auto;
 }
 
+/* Hero Section */
 #hero {
-  /* display: inline-block;*/
+  margin-top: 20px;
+  border-radius: 5px;
   width: 100%; 
-  background: #11bad0;
+  background: #1E1E1E;
   text-align: center;
-  padding: 50px, 20px;
+  padding: 60px 20px;
 }
 
+#hero a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00B8A9;
+  color: #121212;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#hero a:hover {
+  background-color: #00FFC3;
+  color: #000;
+}
+
+/* Hover Box in Hero */
+.hover-box {
+  height: 200px;
+  width: 300px;
+  background-color: #1E1E1E;
+  border: 2px solid #00B8A9;
+  border-radius: 20px;
+  box-shadow: 0px 8px 30px rgba(0, 184, 169, 0.2);
+  margin: 0 auto;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-box:hover {
+  transform: scale(0.95);
+  background-color: #00B8A9;
+  color: #121212;
+}
+
+/* About Section */
+#about-me-in-text {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about-me-in-text p {
+  flex: 1;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.img {
+  height: 250px;
+  width: 250px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  border: 2px solid #00B8A9;
+  box-shadow: 5px 5px 30px rgba(0, 255, 195, 0.1);
+}
+
+/* Section Headings */
+.h2-styling {
+  background-color: #2C2C2C;
+  border-radius: 7px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  border-left: 4px solid #00B8A9;
+}
+
+/* Skills Section */
 .skills {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding-left: 0;
 }
 
 .skills li {
-  background: #333;
-  color: white;
+  background: #00B8A9;
+  color: #121212;
   padding: 10px 15px;
   border-radius: 5px;
   list-style: none;
+  font-weight: bold;
 }
 
+/* Projects */
+.project {
+  background-color: #1E1E1E;
+  border: 1px solid #2A2A2A;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.project a {
+  color: #00FFC3;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Experience and Education */
+#experience ul,
+#experience li {
+  margin: 0;
+  padding: 0;
+  list-style: disc inside;
+}
+
+/* Contact */
+#contact a {
+  color: #00B8A9;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #333;
-  color: white;
+  background: #1E1E1E;
+  color: #999;
 }
